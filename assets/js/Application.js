@@ -2,7 +2,7 @@
 //imports
 import page from "page";
 import Accueil from "./views/Accueil.js";
-import Footer from "./components/footer.js";
+import Footer from "./components/Footer.js";
 import Sources from "./views/Sources.js";
 import Page404 from "./views/Page404.js";
 
