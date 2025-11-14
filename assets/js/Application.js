@@ -18,11 +18,14 @@ class Application {
     constructor() {
         this.#conteneurHTML = document.querySelector("[data-application]");
 
-        page("/accueil", function () {
+        page(
+          "/",
+          function () {
             this.#vueActuelle = new Accueil(this);
             this.#vueActuelle.render();
             this.setFooter();
-        }.bind(this));
+          }.bind(this)
+        );
 
         page("/sources", function () {
             this.#vueActuelle = new Sources(this);
